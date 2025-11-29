@@ -18,3 +18,22 @@ var missingNumber = function(nums) {
 
   return sum - total;
 };
+
+// XOR solution
+var missingNumber = function(nums) {
+  let xor = 0;
+
+  // XOR all expected numbers: 0, 1, 2, ..., n
+  for (let i = 0; i <= nums.length; i++) {
+    xor = xor ^ i;
+  }
+
+  // XOR all actual numbers from the array
+  for (let num of nums) {
+    xor = xor ^ num;
+  }
+
+  return xor;
+};
+
+// study more XOR
