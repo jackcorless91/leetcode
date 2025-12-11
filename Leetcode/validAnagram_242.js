@@ -22,7 +22,7 @@ var isAnagram = function(s, t) {
   }
   return isAnagram;
 };
-// here is O(n), or O(s + t) solution
+// here is O(n), or O(s + t) solution .
 // create a hash map and loop through each character (char) is s, key is char and value is the frequency of the letters occurrence. so for example 1: a = 3, n = 1, g = 1, r = 1, m = 1.
 // Then loop through t and compare each of the char instances to our map. If it's in there we subtract its count by 1. if they have differing character return false
 // Finally loop through our map and check if if everything is not equal to 0, this means it's not an anagram. If it is equal to 0 then anagram is true.
