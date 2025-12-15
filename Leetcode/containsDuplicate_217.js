@@ -36,6 +36,7 @@ var containsDuplicate = function(nums) {
 // if loop finishes without returning > no duplicates exist
 var containsDuplicate = function(nums) {
   let duplicates = new Set();
+
   for (const num of nums) {
     if (duplicates.has(num)) {
       return true;
