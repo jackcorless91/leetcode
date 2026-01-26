@@ -73,7 +73,8 @@ var sortedSquares = function(nums) {
     let k = nums.length - 1;
 
     while (i <= j) {
-        if (Math.abs(nums[i]) > Math.abs(nums[j])) {
+        if (Math.a
+          bs(nums[i]) > Math.abs(nums[j])) {
             res[k] = nums[i] ** 2;
             i++
         } else {
