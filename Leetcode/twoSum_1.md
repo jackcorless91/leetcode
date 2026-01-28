@@ -7,14 +7,14 @@ You may assume that each input would have exactly one solution, and you may not 
 
 You can return the answer in any order.
 
-## Examples
-### Example 1
+### Examples
+#### Example 1
 Input: `nums = [2,7,11,15], target = 9`  
 Output: `[0,1]`  
-### Explanation: 
+#### Explanation: 
 Because `nums[0] + nums[1] == 9`, we return `[0, 1]`.   
 
-## 0(n^2) Solution
+## O(n^2) Solution
 The first solution is te simplest and quadratic, a nested for loop. We are asked to return the indices of `nums[i]` that add up to the target, this can be done by comparing each value to every other value in the array brute forcing the solution.   
 
 First init the outer loop `i`.
@@ -37,7 +37,7 @@ if (nums[i] + nums[j] === target) {
 }
 ```
 
-### Full 0(n^2) Solution
+### Full O(n^2) Solution
 ```javascript
 var twoSum = function(nums, target) {
   for (let i = 0; i < nums.length; i++) {
@@ -78,7 +78,7 @@ if (numberToIndex[numberNeeded] !== undefined && numberToIndex[numberNeeded] !==
 }
 ```
 
-## Full 0(n) Solution
+## Full O(n) Solution
 ```javascript
 var twoSum = function(nums, target) {
     const numberToIndex = {};

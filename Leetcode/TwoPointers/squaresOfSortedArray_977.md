@@ -30,7 +30,7 @@ var sortedSquares = function(nums) {
 ```
 This uses sorting, which is 0(n log n). 
 
-## 0(n) Solution - two pointer
+## O(n) Solution - two pointer
 Given that we have the input array already sorted it makes it possible to square and append our result array in one step, keeping it 0(n) with a two pointer solution.  
 Fundamentally we know squared numbers always result in a positive result, this means we need to compare absolute values (distance from 0) rather than just a comparative operator, ```-10 < 3``` but after squaring we have ```100``` and ```9```. With this information we know to compare absolute values and which ever is larger, we square and increment ```i``` or decrement ```k``` accordingly, and append the largest result to the end of the ```res``` array.
 
