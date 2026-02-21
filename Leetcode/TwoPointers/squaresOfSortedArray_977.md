@@ -87,3 +87,28 @@ var sortedSquares = function(nums) {
 }
 ```
 
+
+## Solution without Math.abs
+```javascript
+var sortedSquares = function(nums) {
+  let left = 0;
+  let right = nums.length - 1;
+  let result = new Array(nums.length);
+  let i = nums.length - 1;
+
+  while ( left <= right) {
+    if (nums[left] ** 2 < nums[right] ** 2) {
+      result[i] = nums[right] ** 2;
+      right--;
+    } else {
+      result[i] = nums[left] ** 2;
+      left++;
+    }
+    i--;
+
+  }
+  return result;
+
+}
+```
+
